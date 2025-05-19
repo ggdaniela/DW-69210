@@ -1,0 +1,161 @@
+/*Reset de CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+/*Comentarios CSS*/
+/* 
+Paleta de colores
+
+#798E6C Verde
+#FFFFFF Blanco fondos claros o textos
+#D4AF37 Dorado detalles
+#A67C52 Madera fondo
+#1E1E1E Negro Tipografía y contrastes
+#DADADA Gris claro Fondo suave o neutro
+#e9d0c3 Rosa claro
+#bd8c78 Rosa oscuro
+#a63233 Bordo
+#4a8161 Verde oscuro
+
+
+Fonts
+
+Trajan Pro 3 Regular
+font-family: "trajan-pro-3", serif;
+font-weight: 400;
+font-style: normal;
+
+Trajan Pro 3 Semibold
+font-family: "trajan-pro-3", serif;
+font-weight: 600;
+font-style: normal;
+
+Trajan Pro 3 Bold
+font-family: "trajan-pro-3", serif;
+font-weight: 700;
+font-style: normal;
+*/
+
+
+head{
+
+}
+
+/*Body*/
+
+body{
+    /*Tipografía*/
+    font-family: "trajan-pro-3", serif;
+    /* Fondo */
+    background-image: url(../fotos/fondo.JPG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.bodynosotras{
+    background-image: url(../fotos/fondo-nosotras.JPG);
+    
+}
+
+.bodyservicios{
+    background-image: url(../fotos/body-servicios.JPG);
+    
+}
+/* Header */
+
+header{
+    
+}
+
+li{
+    list-style: none;
+}
+
+.headercontacto{
+    background-color: white;
+}
+header img{
+    width: 100px;
+    height: auto;
+}
+header a{
+    text-decoration: none;
+    color: #a63233;
+    font-family: "trajan-pro-3", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Footer */
+.pie{
+    background-color: #FFFFFF;
+    background-position: top;
+    
+}
+footer img{
+    width: 100px;
+}
+
+/* Main */
+
+main{
+    color:#798E6C ;
+    height: 80%;
+
+}
+
+.maincontacto{
+    background-image: url(../fotos/main-contacto.JPG);
+    color: black;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+/* Imagen que va en el centro del main*/
+.imagennosotras{
+    width: 200px;
+    height: auto;
+}
+
+/*Baners*/
+.bannerservicios{
+    background-image: url(../fotos/banner-servicios.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    
+}
+
+.bannerresenas{
+    background-image: url(../fotos/banner-resenas.JPG);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+
+}
+
+.bannercontacto{
+    background-color: #FFFFFF;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+
+}
+
+/*Formato titulos*/ 
+.titulonegro{
+    color: black;
+    align-items: center;
+    
+}
+
+.titulobordo{
+    color: #a63233;
+}
+
+
