@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotras</title>
+
     <!--Fonts-->
     <link rel="stylesheet" href="https://use.typekit.net/ipz7ucu.css">
-
+    <!--link bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!--link css-->
     <link rel="stylesheet" href="../css/style.css">
+    <title>Nosotras</title>
 </head>
-<body class="bodynosotras">
+
+<body>
     <header>
-        <!--logo-->
-        <a href="../index.html">
-            <img src="../fotos/logo-sin-fondo.png">
-         </a>
-        <!--menu de naegacion-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li> 
-                <li>
-                    <a href="#">Nosotras</a>
-                </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="./reseñas.html">Reseñas</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <section class="headercontacto">
+            <div class="headerlogo">
+                <!--logo-->
+                <a href="../index.html">
+                    <img src="../fotos/logo-sin-fondo.png">
+                </a>
+            </div>
+            <!--menu de navegacion-->
+            <nav>
+                <ul>
+                    <li class="botones">
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li class="botones">
+                        <a href="#">Nosotras</a>
+                    </li>
+                    <li class="botones">
+                        <a href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="botones">
+                        <a href="./reseñas.html">Reseñas</a>
+                    </li>
+                    <li class="botones">
+                        <a href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main>
-       <!--presentacion-->
-       <section>
-        <h1 class=".titulonegro">Nosotras</h1>
-        <img class="imagennosotras" src="../fotos/nosotras.JPEG" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ex, qui labore numquam impedit soluta tenetur voluptatibus debitis nostrum vero, explicabo dignissimos! Laboriosam id facilis ut nam! Sequi, hic nulla.</p>
-        </section>
-        <!--Titulo y texto-->
-        <section>
-            <h2>Hola soy Ale!</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quo fugiat animi hic laudantium consequatur doloribus iste incidunt laboriosam fuga adipisci, facilis voluptatibus enim eum perferendis! Illo cumque repellat earum./p>
+        <!--Banner-->
+        <section class="bannernosotras">
+            <h1 class="titulobordo">Nosotras</h1>
         </section>
 
+        <!--presentacion-->
+        <section class="contenedornosotras">
+            <img class="gridimagennosotras" src="../fotos/imagen-nosotras.png" alt="">
 
-        
-
+            <!--Titulo y texto-->
+            <div class="gridtexto">
+                <h2>Hola soy Ale!</h2>
+                <p>Me recibí hace xx años, y desde entonces ejerzo de manera autónoma, a medida que fueron pasando los
+                    años se fue sumando gente y hoy somos un equipo de 3, Sofía en el área adinistrativa y Daniela
+                    liquidando impuestos </p>
+            </div>
+        </section>
     </main>
-    
-    <footer class="pie">
-        <!--Datos-->
-        <section>
-            <p> Alejandra Eva Garcia</p>
-            <p>Contadora pública UCA</p>
-            <P>CPCECABA T° 243 F° 28</P>      
-        </section>
-        <!--Logo-->
-        <section>
-            <img src="../fotos/logo.jpg">
-        </section>
-        <!--Redes-->
-        <section>
-            <img src="../fotos/whatsapp.jpg">
-            <img src="../fotos/facebook.jpg">
-            <img src="../fotos/instagram.jpg">
-            <img src="../fotos/linkedin.jpg">
+    <footer>
+        <section class="pie">
+
+            <!--Datos-->
+            <div class="datos">
+                <p>Contadora pública UCA</p>
+                <P>CPCECABA T° 243 F° 28</P>
+            </div>
+
+            <!--Mail-->
+            <div class="mailfooter">
+                <p>info@estudioalegarcia.com.ar</p>
+
+            </div>
+
+            <!--Logo-->
+            <div class="logofooter">
+                <a href="../index.html">
+                    <img class="logo" src="../fotos/logo.jpg">
+                </a>
+            </div>
+
+            <!--Redes-->
+            <div class="redesfooter">
+                <a href="https://wa.me/message/6K7FYRPBLQSUM1" target="_blank">
+                    <img class="redes" src="../fotos/whatsapp.png">
+                </a>
+                <a href="#">
+                    <img class="redes" src="../fotos/facebook.png">
+                </a>
+                <a href="https://www.instagram.com/agestudiocontable?igsh=MWlxdmo3eHQ4NmVnNg%3D%3D&utm_source=qr"
+                    target="_blank">
+                    <img class="redes" src="../fotos/instagram.png">
+                </a>
+                <a href="#">
+                    <img class="redes" src="../fotos/linkedin.png">
+                </a>
+            </div>
         </section>
     </footer>
 </body>
+
+
 </html>

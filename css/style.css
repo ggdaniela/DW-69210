@@ -1,9 +1,10 @@
 /*Reset de CSS*/
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
+
 /*Comentarios CSS*/
 /* 
 Paleta de colores
@@ -38,124 +39,611 @@ font-weight: 700;
 font-style: normal;
 */
 
-
-head{
-
-}
-
 /*Body*/
 
-body{
+body {
     /*Tipografía*/
     font-family: "trajan-pro-3", serif;
-    /* Fondo */
-    background-image: url(../fotos/fondo.JPG);
-    background-position: center;
+}
+
+
+
+.bodyservicios {
+    background-image: url(../fotos/body-servicios.JPG);
+    background-position-x: center;
     background-size: cover;
     background-attachment: fixed;
 
 }
 
-.bodynosotras{
-    background-image: url(../fotos/fondo-nosotras.JPG);
-    
-}
-
-.bodyservicios{
-    background-image: url(../fotos/body-servicios.JPG);
-    
-}
 /* Header */
-
-header{
-    
-}
-
-li{
+li {
     list-style: none;
 }
 
-.headercontacto{
+/*contacto*/
+.headercontacto {
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
-header img{
-    width: 100px;
+
+/*servicios*/
+
+.headerservicios {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/*general*/
+
+header img {
+    width: 150px;
     height: auto;
 }
-header a{
+
+
+
+header a {
     text-decoration: none;
     color: #a63233;
     font-family: "trajan-pro-3", serif;
     font-weight: 600;
     font-style: normal;
+    list-style: none;
 }
 
-/* Footer */
-.pie{
-    background-color: #FFFFFF;
-    background-position: top;
-    
+.headerlogo {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-footer img{
-    width: 100px;
+
+Nav {
+    width: 60%;
 }
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.botones {
+    /* Margen interno entre la línea y el contenido=
+    padding: ;*/
+    /*Espacio externo entre el borde de la caja y el borde de las cajas aledañas*/
+    margin-right: 20px;
+}
+
 
 /* Main */
 
-main{
-    color:#798E6C ;
+main {
+    color: #798E6C;
     height: 80%;
 
 }
 
-.maincontacto{
+/*Main nosotras*/
+.contenedornosotras {
+    background-image: url(../fotos/fondo-nosotras.JPG);
+    color: black;
+    background-position-x: left;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas:
+        "img texto";
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.gridtexto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gridimagennosotras {
+    width: 100%;
+    height: 100%;
+    grid-area: img;
+}
+
+
+/*Main Servicios*/
+
+.contenedorservicios {
+
+    display: grid;
+    grid-template-areas:
+        "texto1 texto2 texto3"
+        "img1 img2 img3";
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 300px 80px;
+
+    gap: 10px;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.gridtextos1 {
+
+    /*fuente*/
+    font-family: "trajan-pro-3", serif;
+    font-weight: 600;
+    font-style: oblique;
+    font-size: 1.5rem;
+    /*grid*/
+    grid-area: texto1;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+.gridtextos2 {
+
+    /*fuente*/
+    font-family: "trajan-pro-3", serif;
+    font-weight: 600;
+    font-style: oblique;
+    font-size: 2rem;
+    /*grid*/
+    grid-area: texto2;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.gridtextos3 {
+
+    /*fuente*/
+    font-family: "trajan-pro-3", serif;
+    font-weight: 600;
+    font-style: oblique;
+    font-size: 1.5rem;
+    /*grid*/
+    grid-area: texto3;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.gridimagenservicios1 {
+
+    width: 100%;
+    height: 80px;
+    /*grid*/
+    grid-area: img1;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gridimagenservicios2 {
+
+    width: 100%;
+    height: 80px;
+    /*grid*/
+    grid-area: img2;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.gridimagenservicios3 {
+
+    width: 100%;
+    height: 80px;
+    /*grid*/
+    grid-area: img3;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/*Main contacto*/
+.contenedorcontacto {
     background-image: url(../fotos/main-contacto.JPG);
     color: black;
     background-position: center;
     background-size: cover;
-   
+    display: flex;
+    align-items: center;
 }
 
-/* Imagen que va en el centro del main*/
-.imagennosotras{
-    width: 200px;
-    height: auto;
+.mapacontacto {
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
+
+.formulariocontacto {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.formularioc {
+    background-color: white;
+    padding: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: "trajan-pro-3", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.formulariocontacto label {
+    margin-top: 1rem;
+    font-family: "trajan-pro-3", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.formulariocontacto input {
+    padding: 0.5rem;
+    border: none;
+    background-color: #d8ae3c;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.formulariocontacto textarea {
+    padding: 0.5rem;
+    border: none;
+    background-color: #d8ae3c;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.formulariocontacto input[type="submit"] {
+    margin-top: 1.5rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.formulariocontacto input[type="submit"]:hover {
+    background-color: #333;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.formdos {
+    font-family: "trajan-pro-3", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+
+}
+
+.formtres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
 
 /*Baners*/
-.bannerservicios{
+
+.bannernosotras {
+    background-color: #f8e7ef;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.bannerservicios {
     background-image: url(../fotos/banner-servicios.JPG);
     background-position: center;
     background-size: cover;
     height: 100px;
-    
+    display: flex;
+    align-items: center;
+
 }
 
-.bannerresenas{
+.bannerresenas {
     background-image: url(../fotos/banner-resenas.JPG);
     background-position: center;
     background-size: cover;
     height: 100px;
+    display: flex;
+    align-items: center;
 
 }
 
-.bannercontacto{
+.bannercontacto {
     background-color: #FFFFFF;
     background-position: center;
     background-size: cover;
+    border: 1px solid black;
     height: 100px;
+    display: flex;
+    align-items: center;
+
 
 }
 
-/*Formato titulos*/ 
-.titulonegro{
+/*Formato titulos*/
+
+.titulonegro {
     color: black;
     align-items: center;
-    
+
 }
 
-.titulobordo{
+.titulobordo {
     color: #a63233;
 }
 
 
+
+
+
+
+
+
+/* Footer */
+
+.pie {
+    background-color: #FFFFFF;
+    background-position: top;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+}
+
+.redes {
+    width: 55px;
+    height: auto;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+.mailfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.logofooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.redesfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    padding: 10px;
+}
+
+/*MediaQ*/
+
+@media only screen and (max-width:480px) {
+
+    /*header*/
+    .headercontacto,
+    .headerservicios {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .headerlogo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    Nav {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .botones {
+        /* Margen interno entre la línea y el contenido=
+    padding: ;*/
+        /*Espacio externo entre el borde de la caja y el borde de las cajas aledañas*/
+        margin-right: 0px;
+    }
+
+    /*Main Nosotras*/
+    .contenedornosotras {
+        grid-template-areas:
+            "texto texto"
+            "img img";
+
+    }
+
+    .gridtexto {
+        align-items: center;
+
+    }
+
+    /*Main Servicios*/
+
+    .contenedorservicios {
+
+        display: grid;
+        grid-template-areas:
+            "texto1 "
+            "img1 "
+            "texto2"
+            "img2" 
+            "texto3"
+            "img3";
+        grid-template-columns: 90%;
+        grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
+        padding: 20px;
+
+        
+
+    }
+
+    .gridimagenservicios1 {
+
+        width: 50%;
+        height: auto;
+       }
+
+    .gridimagenservicios2 {
+
+       width: 50%;
+        height: auto;
+        
+    }
+
+    .gridimagenservicios3 {
+
+        width: 50%;
+        height: auto;
+        }
+
+    /*Main contacto*/
+    .contenedorcontacto {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .mapacontacto {
+        width: 100%;
+
+    }
+
+    .formulariocontacto {
+
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    /*Footer*/
+    .pie {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 150px;
+    }
+
+    .logo {
+        width: 100px;
+
+    }
+
+    .redes {
+        width: 30px;
+        height: auto;
+    }
+
+    .datos {
+        display: none;
+
+    }
+
+    .mailfooter {
+        display: none;
+
+
+    }
+
+    .logofooter {
+        flex-direction: column;
+    }
+
+    .redesfooter {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+}

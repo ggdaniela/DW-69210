@@ -1,93 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
+
     <!--Fonts-->
     <link rel="stylesheet" href="https://use.typekit.net/ipz7ucu.css">
-    <!--Link a CSS-->
+    <!--link bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!--link css-->
     <link rel="stylesheet" href="../css/style.css">
+    <title>Servicios</title>
 </head>
-<body class="bodyservicios">
-    <header>
-        <!--logo-->
-        <a href="../index.html">
-            <img src="../fotos/logo-sin-fondo.png">
-         </a>
-        <!--menu de naegacion-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li> 
-                <li>
-                    <a href="./nosotras.html">Nosotras</a>
-                </li>
-                <li>
-                    <a href="#">Servicios</a>
-                </li>
-                <li>
-                    <a href="./reseñas.html">Reseñas</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!--Presentacion-->
-        <section class="bannerservicios">
-            <!--Sirve para darle formato especifico-->
-            <h1 class="titulonegro">Lo más solicitado</h1>
-            
-        </section>
-        <!--Destacados-->
-        <section>
-            
-                      
-            <!--Servicio 1-->
-            <h2>Alta de Monotributo + Ingresos Brutos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni pariatur vel atque earum totam corporis expedita id accusamus 
-                quas illum suscipit at, voluptatibus officia amet officiis nostrum molestias delectus sapiente.
-            </p>
-            <img src="" alt="">
-            
-            <!--Servicio 2-->
-            <h2>Plan de pagos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni pariatur vel atque earum totam corporis expedita id accusamus 
-                quas illum suscipit at, voluptatibus officia amet officiis nostrum molestias delectus sapiente.
-            </p>
-            <img src="" alt="">
-            
-            <!--Servicio 3-->
-            <h2>Certificación de ingresos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni pariatur vel atque earum totam corporis expedita id accusamus 
-                quas illum suscipit at, voluptatibus officia amet officiis nostrum molestias delectus sapiente.
-            </p>
-            <img src="" alt="">
-        </section>
-    </main>
-    
-    <footer class="pie">
-        <!--Datos-->
-        <section>
-            <p> Alejandra Eva Garcia</p>
-            <p>Contadora pública UCA</p>
-            <P>CPCECABA T° 243 F° 28</P>      
-        </section>
-        <!--Logo-->
-        <section>
-            <img src="../fotos/logo.jpg">
-        </section>
-        <!--Redes-->
-        <section>
-            <img src="../fotos/whatsapp.jpg">
-            <img src="../fotos/facebook.jpg">
-            <img src="../fotos/instagram.jpg">
-            <img src="../fotos/linkedin.jpg">
+
+<body>
+    <section class="bodyservicios">
+        <header>
+            <section class="headerservicios">
+                <div class="headerlogo">
+                    <!--logo-->
+                    <a href="../index.html">
+                        <img src="../fotos/logo-sin-fondo.png">
+                    </a>
+                </div>
+                <!--menu de navegacion-->
+                <nav>
+                    <ul>
+                        <li class="botones">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li class="botones">
+                            <a href="./nosotras.html">Nosotras</a>
+                        </li>
+                        <li class="botones">
+                            <a href="#">Servicios</a>
+                        </li>
+                        <li class="botones">
+                            <a href="./reseñas.html">Reseñas</a>
+                        </li>
+                        <li class="botones">
+                            <a href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <!--Presentacion-->
+            <section class="bannerservicios">
+                <!--Sirve para darle formato especifico-->
+                <h1 class="titulonegro">Lo más solicitado</h1>
+            </section>
+            <section class="contenedorservicios">
+
+                <!--Servicio 1-->
+
+                <img class="gridimagenservicios1" src="../fotos/consulta.png" alt="">
+                <div class="gridtextos1">
+                    <p>Alta de Monotributo
+                    <p> + </p>
+                    <p>Ingresos Brutos</p>
+                    </p>
+                </div>
+
+                <!--Servicio 2-->
+
+                <img class="gridimagenservicios2" src="../fotos/consulta.png" alt="">
+                <div class="gridtextos2">
+                    <p>Plan de pagos
+                    </p>
+
+                </div>
+                <!--Servicio 3-->
+
+                <img class="gridimagenservicios3" src="../fotos/consulta.png" alt="">
+                <div class="gridtextos3">
+                    <p>Certificación de ingresos
+                    </p>
+                </div>
+            </section>
+
+        </main>
+    </section>
+
+    <footer>
+        <section class="pie">
+
+            <!--Datos-->
+            <div class="datos">
+                <p>Contadora pública UCA</p>
+                <P>CPCECABA T° 243 F° 28</P>
+            </div>
+
+            <!--Mail-->
+            <div class="mailfooter">
+                <p>info@estudioalegarcia.com.ar</p>
+
+            </div>
+
+            <!--Logo-->
+            <div class="logofooter">
+                <a href="../index.html">
+                    <img class="logo" src="../fotos/logo.jpg">
+                </a>
+            </div>
+
+            <!--Redes-->
+            <div class="redesfooter">
+                <a href="https://wa.me/message/6K7FYRPBLQSUM1" target="_blank">
+                    <img class="redes" src="../fotos/whatsapp.png">
+                </a>
+                <a href="#">
+                    <img class="redes" src="../fotos/facebook.png">
+                </a>
+                <a href="https://www.instagram.com/agestudiocontable?igsh=MWlxdmo3eHQ4NmVnNg%3D%3D&utm_source=qr"
+                    target="_blank">
+                    <img class="redes" src="../fotos/instagram.png">
+                </a>
+                <a href="#">
+                    <img class="redes" src="../fotos/linkedin.png">
+                </a>
+            </div>
         </section>
     </footer>
 </body>
+
+
 </html>
