@@ -61,117 +61,41 @@
     }
 
     .contenedorservicios {
-
         display: grid;
-        grid-template-areas:
-            "texto1 texto2 texto3"
-            "img1 img2 img3";
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 300px 80px;
-
-        gap: 10px;
-        justify-content: space-around;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 3rem;
+        background-image: url("../fotos/body-servicios.JPG");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
         justify-items: center;
-        align-items: center;
-
-        .gridimagenservicios1 {
-
-            width: 100%;
-            height: 80px;
-            /*grid*/
-            grid-area: img1;
-            /*flex*/
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .gridtextos1 {
-
-            /*fuente*/
-            font-family: "trajan-pro-3", serif;
-            font-weight: 600;
-            font-style: oblique;
-            font-size: 1.5rem;
-            /*grid*/
-            grid-area: texto1;
-            /*flex*/
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        text-align: center;
 
 
-
-        }
-
-        .gridimagenservicios2 {
-
-            width: 100%;
-            height: 80px;
-            /*grid*/
-            grid-area: img2;
-            /*flex*/
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-        }
-
-        .gridtextos2 {
-
-            /*fuente*/
-            font-family: "trajan-pro-3", serif;
-            font-weight: 600;
-            font-style: oblique;
-            font-size: 2rem;
-            /*grid*/
-            grid-area: texto2;
-            /*flex*/
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-
-        }
-
-        .gridimagenservicios3 {
-
-            width: 100%;
-            height: 80px;
-            /*grid*/
-            grid-area: img3;
-            /*flex*/
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
+        .gridtextos1,
+        .gridtextos2,
         .gridtextos3 {
-
-            /*fuente*/
-            font-family: "trajan-pro-3", serif;
-            font-weight: 600;
-            font-style: oblique;
-            font-size: 1.5rem;
-            /*grid*/
-            grid-area: texto3;
-            /*flex*/
             display: flex;
             flex-direction: column;
             align-items: center;
+            font-family: "trajan-pro-3", serif;
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            max-width: 200px;
+        }
 
 
+        .gridimagenservicios1,
+        .gridimagenservicios2,
+        .gridimagenservicios3 {
+            width: 80px;
+            height: auto;
+            margin-top: -0.5rem;
         }
 
 
 
     }
-
-
-
-
-
-
-
-
 }
