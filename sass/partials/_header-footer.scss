@@ -1,0 +1,51 @@
+/*Footer*/
+.pie {
+    background-color: #FFFFFF;
+    background-position: top;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+.datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+
+}
+.mailfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+.logofooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+.logo {
+    width: 140px;
+    height: auto;
+}
+}
+
+.redesfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    padding: 10px;
+    .redes {
+    width: 55px;
+    height: auto;
+}
+}
+
+
+
+}

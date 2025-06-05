@@ -1,0 +1,44 @@
+/*Reset de CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+Paleta de colores
+
+#798E6C Verde
+#FFFFFF Blanco fondos claros o textos
+#D4AF37 Dorado detalles
+#A67C52 Madera fondo
+#1E1E1E Negro Tipografía y contrastes
+#DADADA Gris claro Fondo suave o neutro
+#e9d0c3 Rosa claro
+#bd8c78 Rosa oscuro
+#a63233 Bordo
+#4a8161 Verde oscuro
+
+
+Fonts
+
+Trajan Pro 3 Regular
+font-family: "trajan-pro-3", serif;
+font-weight: 400;
+font-style: normal;
+
+Trajan Pro 3 Semibold
+font-family: "trajan-pro-3", serif;
+font-weight: 600;
+font-style: normal;
+
+Trajan Pro 3 Bold
+font-family: "trajan-pro-3", serif;
+font-weight: 700;
+font-style: normal;
+*/
+
+body {
+    /*Tipografía*/
+    font-family: "trajan-pro-3", serif;
+}
