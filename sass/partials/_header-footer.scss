@@ -1,11 +1,11 @@
 /*Para linkear los estilos*/
-@use"./variables";
+@use "./variables" as *;
 
 
 
 /*Footer*/
 .pie {
-    background-color: $blanco;
+    background-color: #FFFFFF;
     background-position: top;
     display: flex;
     justify-content: space-evenly;

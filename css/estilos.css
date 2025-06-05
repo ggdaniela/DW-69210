@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /*Lo mejor es dejar esta hoja solo con los use*/
+/*Colores*/
+/*Fuentes*/
+/*Trajan Pro 3 Regular*/
+/*Trajan Pro 3 Semibold*/
+/*Trajan Pro 3 Bold*/
 /*Reset de CSS*/
 * {
   margin: 0;
@@ -7,56 +12,13 @@
   box-sizing: border-box;
 }
 
-/* 
-Paleta de colores
-
-#798E6C Verde
-#FFFFFF Blanco fondos claros o textos
-#D4AF37 Dorado detalles
-#A67C52 Madera fondo
-#1E1E1E Negro Tipografía y contrastes
-#DADADA Gris claro Fondo suave o neutro
-#e9d0c3 Rosa claro
-#bd8c78 Rosa oscuro
-#a63233 Bordo
-#4a8161 Verde oscuro
-
-
-Fonts
-
-Trajan Pro 3 Regular
-font-family: "trajan-pro-3", serif;
-font-weight: 400;
-font-style: normal;
-
-Trajan Pro 3 Semibold
-font-family: "trajan-pro-3", serif;
-font-weight: 600;
-font-style: normal;
-
-Trajan Pro 3 Bold
-font-family: "trajan-pro-3", serif;
-font-weight: 700;
-font-style: normal;
-*/
 body {
   /*Tipografía*/
   font-family: "trajan-pro-3", serif;
 }
 
-header ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-header ul .botones {
-  /* Margen interno entre la línea y el contenido=
-  padding: ;*/
-  /*Espacio externo entre el borde de la caja y el borde de las cajas aledañas*/
-  margin-right: 20px;
-}
-
+/*Lo mejor es dejar esta hoja solo con los use*/
+/*Para linkear los estilos*/
 .headercontacto {
   background-color: white;
   display: flex;
@@ -64,7 +26,7 @@ header ul .botones {
   justify-content: space-between;
 }
 .headercontacto .headerlogo {
-  width: 40%;
+  width: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -72,6 +34,18 @@ header ul .botones {
 }
 .headercontacto Nav {
   width: 60%;
+}
+.headercontacto Nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.headercontacto Nav ul li {
+  list-style: none;
+}
+.headercontacto Nav ul .botones {
+  margin-right: 20px;
 }
 
 /*Main*/
@@ -115,6 +89,8 @@ header ul .botones {
   justify-content: center;
 }
 
+/*Lo mejor es dejar esta hoja solo con los use*/
+/*Para linkear los estilos*/
 .bodyservicios {
   background-image: url(../fotos/body-servicios.JPG);
   background-position-x: center;
@@ -163,63 +139,38 @@ header ul .botones {
 }
 .bodyservicios .contenedorservicios {
   display: grid;
-  grid-template-areas: "texto1 " "img1 " "texto2" "img2" "texto3" "img3";
-  grid-template-columns: 90%;
-  grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem;
+  background-image: url("../fotos/body-servicios.JPG");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-items: center;
+  text-align: center;
 }
-.bodyservicios .contenedorservicios .gridimagenservicios1 {
-  width: 50%;
-  height: auto;
-}
-.bodyservicios .contenedorservicios .gridtextos1 {
-  /*fuente*/
-  font-family: "trajan-pro-3", serif;
-  font-weight: 600;
-  font-style: oblique;
-  font-size: 1.5rem;
-  /*grid*/
-  grid-area: texto1;
-  /*flex*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.bodyservicios .contenedorservicios .gridimagenservicios2 {
-  width: 50%;
-  height: auto;
-}
-.bodyservicios .contenedorservicios .gridtextos2 {
-  /*fuente*/
-  font-family: "trajan-pro-3", serif;
-  font-weight: 600;
-  font-style: oblique;
-  font-size: 2rem;
-  /*grid*/
-  grid-area: texto2;
-  /*flex*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.bodyservicios .contenedorservicios .gridimagenservicios3 {
-  width: 50%;
-  height: auto;
-}
+.bodyservicios .contenedorservicios .gridtextos1,
+.bodyservicios .contenedorservicios .gridtextos2,
 .bodyservicios .contenedorservicios .gridtextos3 {
-  /*fuente*/
-  font-family: "trajan-pro-3", serif;
-  font-weight: 600;
-  font-style: oblique;
-  font-size: 1.5rem;
-  /*grid*/
-  grid-area: texto3;
-  /*flex*/
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "trajan-pro-3", serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  max-width: 200px;
+}
+.bodyservicios .contenedorservicios .gridimagenservicios1,
+.bodyservicios .contenedorservicios .gridimagenservicios2,
+.bodyservicios .contenedorservicios .gridimagenservicios3 {
+  width: 80px;
+  height: auto;
+  margin-top: -0.5rem;
 }
 
+/*Lo mejor es dejar esta hoja solo con los use*/
+/*Para linkear los estilos*/
 header ul {
   display: flex;
   justify-content: space-between;
@@ -264,6 +215,8 @@ header ul .botones {
   align-items: center;
 }
 
+/*Lo mejor es dejar esta hoja solo con los use*/
+/*Para linkear los estilos*/
 header ul {
   display: flex;
   justify-content: space-between;
@@ -349,6 +302,8 @@ header ul .botones {
   align-items: center;
 }
 
+/*Lo mejor es dejar esta hoja solo con los use*/
+/*Para linkear los estilos*/
 /*Footer*/
 .pie {
   background-color: #FFFFFF;
@@ -403,28 +358,28 @@ header ul .botones {
     flex-direction: column;
     justify-content: center;
   }
-  .headerlogo {
+  .headercontacto .headerlogo,
+  .headerservicios .headerlogo {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  Nav {
+  .headercontacto Nav,
+  .headerservicios Nav {
     width: 100%;
     padding: 5px;
   }
-  .botones {
-    /* Margen interno entre la línea y el contenido=
-    padding: ;*/
-    /*Espacio externo entre el borde de la caja y el borde de las cajas aledañas*/
+  .headercontacto Nav .botones,
+  .headerservicios Nav .botones {
     margin-right: 0px;
   }
   /*Main Nosotras*/
   .contenedornosotras {
     grid-template-areas: "texto texto" "img img";
   }
-  .gridtexto {
+  .contenedornosotras .gridtexto {
     align-items: center;
   }
   /*Main Servicios*/
@@ -435,15 +390,15 @@ header ul .botones {
     grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
     padding: 20px;
   }
-  .gridimagenservicios1 {
+  .contenedorservicios .gridimagenservicios1 {
     width: 50%;
     height: auto;
   }
-  .gridimagenservicios2 {
+  .contenedorservicios .gridimagenservicios2 {
     width: 50%;
     height: auto;
   }
-  .gridimagenservicios3 {
+  .contenedorservicios .gridimagenservicios3 {
     width: 50%;
     height: auto;
   }
@@ -452,10 +407,10 @@ header ul .botones {
     flex-direction: column;
     justify-content: space-around;
   }
-  .mapacontacto {
+  .contenedorcontacto .mapacontacto {
     width: 100%;
   }
-  .formulariocontacto {
+  .contenedorcontacto .formulariocontacto {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -467,25 +422,25 @@ header ul .botones {
     align-items: center;
     height: 150px;
   }
-  .logo {
-    width: 100px;
-  }
-  .redes {
-    width: 30px;
-    height: auto;
-  }
-  .datos {
+  .pie .datos {
     display: none;
   }
-  .mailfooter {
+  .pie .mailfooter {
     display: none;
   }
-  .logofooter {
+  .pie .logofooter {
     flex-direction: column;
   }
-  .redesfooter {
+  .pie .logofooter .logo {
+    width: 100px;
+  }
+  .pie .redesfooter {
     justify-content: space-around;
     width: 100%;
+  }
+  .pie .redesfooter .redes {
+    width: 30px;
+    height: auto;
   }
 }
 
