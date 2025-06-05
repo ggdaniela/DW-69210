@@ -2,19 +2,7 @@
 @use"./variables";
 
 //*Header*/
-header ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
 
-    .botones {
-        /* Margen interno entre la línea y el contenido=
-    padding: ;*/
-        /*Espacio externo entre el borde de la caja y el borde de las cajas aledañas*/
-        margin-right: 20px;
-    }
-}
 
 .headercontacto {
     background-color: white;
@@ -32,6 +20,20 @@ header ul {
 
     Nav {
         width: 60%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .botones {
+                /* Margen interno entre la línea y el contenido=
+    padding: ;*/
+                /*Espacio externo entre el borde de la caja y el borde de las cajas aledañas*/
+                margin-right: 20px;
+            }
+        }
     }
 }
 
