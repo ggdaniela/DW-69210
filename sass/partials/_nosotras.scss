@@ -1,3 +1,6 @@
+/*Para linkear los estilos*/
+@use"./variables";
+
 //*Header*/
 header ul {
     display: flex;
@@ -30,7 +33,6 @@ header ul {
     Nav {
         width: 60%;
     }
-
 }
 
 /*Main*/
@@ -78,4 +80,3 @@ header ul {
         justify-content: center;
     }
 }
-
