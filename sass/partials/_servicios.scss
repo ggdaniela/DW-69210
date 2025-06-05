@@ -64,20 +64,26 @@
 
         display: grid;
         grid-template-areas:
-            "texto1 "
-            "img1 "
-            "texto2"
-            "img2"
-            "texto3"
-            "img3";
-        grid-template-columns: 90%;
-        grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
-        padding: 20px;
+            "texto1 texto2 texto3"
+            "img1 img2 img3";
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 300px 80px;
+
+        gap: 10px;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
 
         .gridimagenservicios1 {
 
-            width: 50%;
-            height: auto;
+            width: 100%;
+            height: 80px;
+            /*grid*/
+            grid-area: img1;
+            /*flex*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .gridtextos1 {
@@ -100,8 +106,14 @@
 
         .gridimagenservicios2 {
 
-            width: 50%;
-            height: auto;
+            width: 100%;
+            height: 80px;
+            /*grid*/
+            grid-area: img2;
+            /*flex*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
         }
 
@@ -124,8 +136,14 @@
 
         .gridimagenservicios3 {
 
-            width: 50%;
-            height: auto;
+            width: 100%;
+            height: 80px;
+            /*grid*/
+            grid-area: img3;
+            /*flex*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .gridtextos3 {
@@ -144,6 +162,7 @@
 
 
         }
+
 
 
     }
