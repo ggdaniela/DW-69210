@@ -8,21 +8,7 @@
     background-attachment: fixed;
 
     //*Header*/
-    header ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-
-        .botones {
-            /* Margen interno entre la línea y el contenido=
-    padding: ;*/
-            /*Espacio externo entre el borde de la caja y el borde de las cajas aledañas*/
-            margin-right: 20px;
-        }
-    }
-
-    .headerservicios {
+    header .headerservicios {
 
         display: flex;
         flex-direction: row;
@@ -39,8 +25,21 @@
         Nav {
             width: 60%;
 
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
 
+                li {
+                    list-style: none;
+                }
 
+                .botones {
+
+                    margin-right: 20px;
+                }
+            }
         }
     }
 
@@ -62,7 +61,7 @@
 
     .contenedorservicios {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 2fr);
         gap: 2rem;
         padding: 3rem;
         background-image: url("../fotos/body-servicios.JPG");
@@ -90,7 +89,7 @@
         .gridimagenservicios1,
         .gridimagenservicios2,
         .gridimagenservicios3 {
-            width: 80px;
+            width: 100px;
             height: auto;
             margin-top: -0.5rem;
         }
